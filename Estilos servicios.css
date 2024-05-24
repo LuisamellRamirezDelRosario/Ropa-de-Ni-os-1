@@ -1,0 +1,100 @@
+/* Estilos comunes a todas las páginas */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    background-color: #a8dadc;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    color: white;
+}
+
+nav {
+    background-color: #ffb6c1;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: #ffb6c1;
+    padding: 10px;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul .submenu li {
+    margin: 0;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: #ffe4e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 40px); /* Adjusts the width to fit four products per row with a gap */
+    text-align: center;
+}
+
+footer {
+    background-color: #a8dadc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
